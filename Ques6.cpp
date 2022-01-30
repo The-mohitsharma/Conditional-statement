@@ -7,7 +7,8 @@ int num;
 cout<<"\n enter num ::";
 cin>>num;
 
-//Nested if else condition //
+// using Nested if else condition //
+
 if( num!=0) //  outer condition //
 {
     if(num>=0)  // first inner condition //
