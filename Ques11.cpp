@@ -1,29 +1,27 @@
-#include<iostream>
+/* wap to input principle amount and time.it time is more than 10 years
+,calculate the simple interest with 8 % , other wise calculate it with rate
+12 % per annum */
+
+#include<bits/stdc++.h>
 using namespace std;
-
-
 int main()
 {
-	char ch;
+int amount, time, SI;
+cout<<"\n enter the amount :: ";
+cin>>amount;
+cout<<" enter time in years ::";
+cin>>time;
+if(time >=10)
+{
 
-	//reading a character
-	cout<<"Enter an alphabet: ";
-	cin>>ch;
+    SI= (amount*time*8)/100;
+    cout<<"\n si with 8% is ::"<<SI;
+}
+     else
+    {
+      SI= (amount*time*12)/100;
+        cout<<"\n si with 12% annum ::"<<SI;
+  }
 
-	//condiion to check character is alphabet or not
-	if( (ch>='A' && ch<='Z') || (ch>='a' && ch<='z'))
-	{
-		//conditions to check character is VOWEL or not
-		if( ch=='A' || ch=='a' || ch=='E' || ch=='e' || ch=='I' || ch=='i' || ch=='O' || ch=='o' || ch=='U' || ch=='u')
-			cout<<"\""<<ch<<"\" is a VOWEL"<<endl;
-		else
-			cout<<"\""<<ch<<"\" is a CONSONANT"<<endl;
-	}
-	else
-	{
-		cout<<"\""<<ch<<"\" is not an alphabet\n";
-	}
-
-
-	return 0;
+return 0;
 }
