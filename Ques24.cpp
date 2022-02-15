@@ -16,15 +16,15 @@ if(phy>=50&&chem>=50&&maths>=50)
     {
         cout<<"\n Grade 'A' :";
     }
-else if(phy>=50&&maths>=50||chem!=50)
+else if(phy>=50||chem>=50&&maths!=50)
     {
         cout<<"\n Grade 'B' :";
     }
-else if(maths>=50||phy!=50||chem!=50)
+else if(phy!=50 ||chem!=50 &&maths>=50)
     {
         cout<<"\n Grade 'C' :";
     }
-else if(phy<=50||chem<=50||maths<=50)
+else if(phy!=50||chem!=50&&maths!=50)
     {
         cout<<"\n Grade 'D' :";
     }
@@ -33,4 +33,4 @@ else if(phy<=50||chem<=50||maths<=50)
     }
     return 0;
 
-}
+}     // PENDIND FOR 4TH CASE ITS SHOWS ERROR //
